@@ -1,0 +1,7 @@
+{
+  "name": "THE VOICE OF DOLOR",
+  "description": "A premium AI voice synthesis engine capable of emotional depth, multi-speaker dialogue, and high-fidelity audio generation.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE VOICE OF DOLOR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dolor: {
+                bg: '#020402',      // Obsidian Green (Background)
+                panel: '#051a10',   // Deep Forest (Panels)
+                surface: '#0a2f1e', // Emerald Dark (Inputs/Surfaces)
+                border: '#14532d',  // Green 900 (Borders)
+                text: '#fef3c7',    // Amber 100 (Primary Text - Cream)
+                muted: '#a7f3d0',   // Emerald 200 (Secondary Text)
+                accent: '#fbbf24',  // Amber 400 (Primary Action - Gold)
+                gold: '#d97706',    // Amber 600 (Rich Gold)
+                steel: '#374151',   // Gray 700 (Inactive)
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Fira Code', 'monospace'],
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400&display=swap');
+      
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #020402; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #14532d; 
+        border-radius: 3px;
+        border: 1px solid #051a10;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #fbbf24; 
+      }
+      body {
+        background-color: #020402;
+        color: #fef3c7;
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
